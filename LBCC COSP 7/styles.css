@@ -1,0 +1,6 @@
+#binary-table, th, td{
+    border:solid black 1px;
+    border-collapse: collapse;
+    padding:1rem;
+}
+

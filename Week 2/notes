@@ -1,0 +1,33 @@
+An array is used to store data that is simpler than an object.  An array is used to store an element and its position.  While the elements themselves can be complex, for example they can be any datatype (strings, numbers, booleans etc) and they can even be an object, the array itself is a simple indexing system.  An array is an element and its index.  In the example: let myArr = ['elephant',  3,  true], myArr has three elements and they are all automatically indexed: the string element 'elephant' is index 0, the number 3 is index 1 and the boolean 'true' is index 2.  And so on for as many elements as the array contains.
+
+An object is more complicated and utilizes properties which are made of key:value pairs.  I've heard the nomenclature described in a few different ways.  It doesn't seem to be consistent and I find that frustrating.  Here is what i gather:
+
+
+
+let deepPurple = {
+album: 'In Rock',
+year: 1970,
+sideA: ['Speed King', 'Bloodsucker', 'Child In Time']
+}
+The OBJECT is deepPurple.  It's first PROPERTY is album : 'In Rock'.  The property KEY (or sometimes it's called NAME) is album.  The property VALUE is 'In Rock'.
+I was reading about this because it was driving me crazy.  I think what I described above is correct.  It would be nice if the naming convention was agreed upon.  It would be easier for us newbies to follow along.  This stuff is already hard enough.  lol.  rant over.
+
+So you can see from the example that objects are more complex than a simple element to index relationship.  
+But things can get a little weird because array elements can be objects and objects can contain arrays.  
+Use arrays for making lists.  Use objects if you need a container that holds more diverse data.
+
+examples:
+Array:  deepPurpleMembers = ['Ritchie', 'Jon', 'Ian', 'Roger', 'Ian]  //  this holds a simple collection of names
+Object:  let deepPurple = {album: 'In Rock', year: 1970,  sideA: ['Speed King', 'Bloodsucker', 'Child In Time']} // holds data for album title, year of release and an array for the songs on side 1 of the record.
+
+I find it interesting that we could store the object in an array if we wanted.  So at this point in my learning, I'm not 100% sure where and when you would use one over the other.  I need to see more applications.  haha.
+
+
+
+
+Inventory Management: Imagine you're building an inventory management system for a small retail store using JavaScript. How would you employ arrays and objects to efficiently organize and track products, their quantities, prices, and supplier information? Provide in code a small example.
+
+
+
+
+

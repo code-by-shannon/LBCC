@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Burger Shop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li>
+                    <button class="js-cart-button" href="">
+                        Cart (<span class='js-cart-count'>0</span>)
+                    </button>
+                    <div class="cart">
+                        <ul class="cart__items">
+                           
+                        </ul>
+                        <div class="cart__total"></div>
+                            <div>sub-total: $<span class="js-cart-subtotal">0</span></div>
+                            <div>tax: $<span class='js-cart-tax'>0</span></div>
+                            <div>total: $<span class = 'js-cart-total'>0</span></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page">
+            <h1>Burger <span>Shop</span></h1>
+            <ul class="products"></ul>
+        </div>
+    </main>
+    <script src="main.js"></script> 
+</body>
+</html>

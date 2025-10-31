@@ -1,0 +1,210 @@
+==========================
+***** DISCUSSION 9/14*****
+==========================
+
+Logic Statements
+This week, we are exploring logic statements. Feel free to use Google, ChatGPTLinks to an external site., or any other resource to answer the questions below.
+
+Please answer the discussion questions below:
+
+1.
+What is a logic statement in JavaScript, and why are they important in programming?
+
+Logic statements are expressions or conditions that evaluate to true or false.  They control the flow
+of a program and allow for decision making.
+
+2.
+What is the purpose of logical operators (e.g., &&, ||, !) in JavaScript? Provide scenarios where each of these operators is useful.
+
+Logical operators allow you to combine and/or modify logic statements.
+*** && is the (logical AND) ***  
+Returns true if both of the operands are true.  To define a bit of vocabulary here, an operator is the symbol that is used to perform an evaluation, for example + - / * && || ! === etc.
+The operand is the part of the logic statement that is receiving the evaluation, or that which is being 
+evaluated.  For example:   5*3:  * is the operator and 5 and 3 are the operands.
+
+So if both of the operands are true in an expression using && then true will be the returned value.
+If one of the operands is false (or both) then the && expression will return false.
+
+console.log(5 > 4 && 7 < 9); //true
+console.log(5 < 1 && 5 > 2); //false
+console.log(3 > 5 && 1 > 2;  //false
+
+*** || logical OR ***
+Different than && because with the logical OR only one operand needs to be true in the expression.
+console.log( 5 === 2 || 0 === 0);  //true
+In the preceding example the operand on the left is not true but since the operand on the right is true
+the expression evaluates to true.
+
+*** ! logical NOT ***
+logical NOT negates the value of a logical statement.  It basically gives you the opposite result of evaluating the expression.
+console.log(5 === '5') //false
+console.log(5 !== '5') //true
+In the preceding example 5 the number is not equal to the string 5.  But adding logical NOT in front of the == flips the evaluation to its opposite.  5 is not equal to '5'.  // true 
+
+3.
+How do you write a simple "if" statement in JavaScript? Provide an example.
+*** if else statements ***
+'if' statements allows you to control the logic flow by allowing your code to arrive at a fork in the road
+(a crude analogy) where the code 'decides' which path to take based on whether or not the condition is
+satisfied.
+The syntax is as follows:
+Use the keyword if followed by the condition found in the ().  Then use curly braces {}.  Inside the {} insert the code to to run if the condition is true. Afher the {} type the keyword else followed by {} and within THOSE {} insert the code to run if the condition was evaluated to be false.
+
+example:
+
+if(5 > 2){
+    console.log('true');
+} else console.log('false');  // true
+
+if(5 > 12){
+    console.log('true');
+} else console.log('false');  // false
+
+By Friday, be sure to post your initial response. By Sunday, when you're done answering these questions, visit back periodically and reply to one other student.
+
+
+
+
+
+
+===============================
+***** LAB ASSIGNMENT 9/14 *****
+===============================
+
+Arrays and Objects
+From your book, complete the following exercises in Chapter 4:
+
+// Practice exercise 4.1
+let myVar = true;
+console.log(myVar);
+if(myVar){
+    console.log('myVar is true'); // true
+}
+
+if(!myVar){
+    console.log('myVar is false');
+}
+
+//or . . . 
+
+myVar = false;
+console.log(myVar);
+if(myVar){
+    console.log('myVar is true'); // true
+}
+
+if(!myVar){
+    console.log('myVar is false'); // false
+}
+
+// Practice exercise 4.2
+
+let age = prompt("How old are you?");
+age = Number(age);
+let message = '';
+
+if (age >= 21){
+    message = 'You are allowed to enter and purchase alcohol';
+} else if (age >= 19) {
+    message = 'You are allowed to enter but may NOT purchase alcohol';
+}  else {
+    message = 'Entry denied';
+}
+
+console.log(message);
+
+// Practice exercise 4.3
+
+let id = true;
+let resultCheck = id ? 'access granted' : 'access denied';
+console.log(resultCheck);
+
+id = false;
+console.log(resultCheck);
+
+//Practice exercise 4.4
+
+let randomValue = Math.floor(Math.random() * 6);
+randomValue = Number(randomValue);
+console.log(randomValue);
+let promptResult = prompt('I\'m Mr. Magic 8-ball!  Ask me ANYTHING!');
+switch(randomValue){
+    case 0:
+    console.log(`${promptResult} : 'No way, Jose!'`);
+    break;
+    case 1:
+    console.log(`${promptResult} : 'Totally, dude!'`);
+    break;
+    case 2:
+    console.log(`${promptResult} : 'Well, anything's possible, I suppose ...'`);
+    break;
+    case 3:
+    console.log(`${promptResult} : 'Don't count on it!'`);
+    break;
+    case 4:
+    console.log(`${promptResult} : 'Are you sure you want to know that?'`);
+    break;
+    case 5:
+    console.log(`${promptResult} : 'Ask a different question!'`);
+    break;
+}
+
+// Practice exercise 4.5
+
+let randomValue = Math.floor(Math.random() * 6);
+randomValue = Number(randomValue);
+console.log(randomValue);
+let promptResult = prompt('Type "What is my free prize?" in the box below!');
+switch(randomValue){
+    case 0:
+    console.log('You got 0:  You win a free can of biscuits!');
+    break;
+    case 1:
+    console.log('You got 1:  You win a free trip to the shadow realm!');
+    break;
+    case 2:
+    console.log('You got 2:  You win a one free cheeseburger!');
+    break;
+    case 3:
+    console.log('You got 3:  You win a free trip around the world in a hot air balloon!');
+    break;
+    case 4:
+    console.log('You got 4:  You win a free day with your in-laws!');
+    break;
+    case 5:
+    console.log('You got 5:  You win a free can of whoop - ass!');
+    break;
+}
+
+/* ROCK, PAPER, SCISSORS GAME */
+
+let weapons = ['Rock', 'Paper', 'Scissors'];
+// Player chooses a number
+let playerNumber = prompt('Enter 0 for rock, 1 for paper or 2 for Scissors');
+playerNumber = Number(playerNumber);
+console.log(`You chose ${weapons[playerNumber]}`);
+// computer chooses a number
+let computerNumber = Math.floor(Math.random() * 3);
+computerNumber = Number(computerNumber);
+console.log(`The computer chose ${weapons[computerNumber]}`);
+
+
+if(playerNumber !== 0 && playerNumber !== 1 && playerNumber !== 2){
+    console.log('You did not enter a valid number.  Please try again and enter 0, 1 or 2');
+}   else if(playerNumber === computerNumber){
+        console.log('Tie, please play again');
+    } else if (playerNumber === 0 && computerNumber === 2){
+        console.log('Player wins!  Rock beats Scissors');
+    } else if (playerNumber === 1 && computerNumber === 0){
+        console.log('Player wins, Paper beats Rock');
+    } else if (playerNumber === 2 && computerNumber === 1){
+        console.log('Player wins!  Scissors beats Paper')
+    } else console.log ('Sorry the computer beat you!');
+
+
+
+
+
+submit on CodeSandbox
+
+***** QUIZ 2 9/14 *****

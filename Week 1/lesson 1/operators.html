@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitives</title>
+</head>
+<body>
+    <h1>Operators</h1>
+    <script>
+        // Operators
+
+        //Math Operators
+        console.log(2 + 8);
+        console.log(4-1);
+        console.log(4*2);
+        console.log(12/5);
+        // modulus
+        console.log(9%5);
+        // 5 goes into 9 once with a remainder of 4.  the remainder gets
+        // printed to the console
+
+        //Assignment Operators
+        let name = 'Joe';  // = is the ass op
+        console.log(name);
+
+        //Addition Assignment Operator
+        let age = 38;
+        console.log('original age =  ' + age)
+        age = 38 + 9;
+        console.log('add 9 to age = ' + age);
+        //or
+        console.log('age increased using add ass op = ', age += 10);
+
+        let newAge = 24;
+        newAge -= 4 // 20
+        console.log(newAge);
+
+        let dogs = 4;
+        console.log(dogs); 
+        dogs *= 3;
+        console.log(dogs);
+
+        let cats= 15;
+        console.log(cats);
+        cats /= 3;
+        console.log(cats);
+
+        //Comparison Operators
+        // comp ops always evaluate to boolean (true or false)
+        console.log(1 == 5);  // false as they are NOT equal
+        console.log(1 === 5);  // triple also checks data type 
+
+        console.log(7 < 5);  //false
+        console.log(7 > 5); //true
+        console.log(10 <= 10);  // is 10 less than or equal to 10?  true
+
+        //Concatanation
+       let greeting = 'hello ' + 'walter';
+       console.log(greeting);
+
+       let human = 'Sami';
+       let doggies = 'Coach and Ace';
+       console.log(human + ' loves ' + doggies);
+    </script>
+</body>
+</html>

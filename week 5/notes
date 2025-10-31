@@ -1,0 +1,47 @@
+1. What is the purpose of a return statement in a function?
+
+Use a return statement to return a value.  For example returning the result of a calculation.  A value can be a number, string, boolean, object, array, null, undefined or even functions themselves.
+The returned value is passed back to the caller at the time and location of where it is called and not where it is defined.  Without 'return' a function returns 'undefined' by default.
+
+Here's an example:
+*** First example without return statement: ***
+
+function greet() {
+    console.log('Hello');
+}
+
+console.log(greet());  // console shows Hello  // undefined
+
+*** Second example WITH return statement ***
+function greet() {
+    console.log('Hello');
+    return 'literally anything';
+}
+
+console.log(greet());  // console shows Hello  // literally anything
+
+2. How does variable scope affect the accessibility and visibility of variables in different parts of your code?
+
+Variables declared inside a function are not accessible outside of it.  If you need to access a variable from a function, outside of the function it needs to be declared globally, or in other words
+outside of the function.
+
+3. Write a simple function declaration, and rewrite that function as a function expression and as an arrow function.
+
+// simple function
+function musicianProfile(guitar, amp, player){
+    return `${guitar}, ${amp}, ${player}`
+} 
+
+console.log(musicianProfile('Stratocaster', 'Marshall', 'Ritchie Blackmore'));
+
+// function expression
+const musicianVitals = function(guitar, amp, player){
+    return `${guitar}, ${amp}, ${player}`;
+} 
+
+ console.log(musicianVitals('Stratocaster', 'Marshall', 'Ritchie Blackmore'));
+
+ // arrow function
+ const musicianVitals = (guitar, amp, player) => `${guitar}, ${amp}, ${player}`; 
+
+ console.log(musicianVitals('Stratocaster', 'Marshall', 'Ritchie Blackmore'));

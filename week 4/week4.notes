@@ -1,0 +1,21 @@
+*** Discussion ***
+
+1.  What is the purpose of using loops when working with arrays in JavaScript?
+* allows you to perform repetitive tasks more easily.  Loops are used to execute a code block multiple times based on a specific condition or range.  A loop 
+iterates through a code block until certain conditions are met.
+
+2.  Can you provide an example of a real-world scenario where you might need to use a loop to process an array of data?
+
+3.  What precautions should you take to avoid infinite loops when using any type of loop?
+* you have to make sure that the conditions you set up, at some point, will result in a false evaluation.  If your condition is always true it can never exit the loop
+and will crash your program making it unresponsive.
+
+
+*** Homework ***
+From your book, complete the following exercises in Chapter 5:
+
+Practice exercise 5.1
+Practice exercise 5.2
+Practice exercise 5.3
+Practice exercise 5.4
+Practice exercise 5.5
