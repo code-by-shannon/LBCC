@@ -1,0 +1,22 @@
+1.  What is the DOM, and why is it essential in web development with JavaScript?
+The DOM is the document object model.  Back in the late 90's websites were static and relied on the user clicking links to go to an entirely different page
+if they wanted to see new content.  Developers wanted a way to make pages dynamic so you could have content changes without refreshing the page.  There were
+a few ways to do it but things took off with the implementation of the DOM which is a hierarchical representation of your webpage that the browser creates dynamically.  Each element
+of HTML is turned into a node which allows JS can interact with, treating them as objects that can be manipulated.  
+
+
+
+
+2. What is the window object in JavaScript, and how does it relate to the browser environment?
+The window object represents the browser window or frame.  It's the top level of container as it comes with a vast list of properties attached to it that can you can use for a myriad of interactions on 
+a web page.  You can manipulate the document, handle events, manage timers, display alerts, dialogue boxes, determine window height and width and too many other 
+interactions to even begin to name but most important one for JS is the DOM.  
+
+
+3.  Real-World Examples: Share 3 examples of websites or web applications that make effective use of the DOM for interactivity and user experience. Take a screenshot of the functionality and post it as part of your response.
+
+shopping page, it's very blurry but we have all seen it before i think, there are arrows off to the side and you can click them and the 'carousel' rotates in a whole new selection of books.  you can click add to cart and all sorts of fun stuff and if you look at the url, the address never changes. 
+
+our old friend the alert nag which i hope we never see again after this class allows you to directly interact with the window
+
+

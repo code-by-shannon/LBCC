@@ -12,3 +12,34 @@ img{
 .cart--open{
     display:block;
 }
+
+#faq_div{
+    width:50%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+#faq_bullets{
+    border:2px blue solid;
+    display:none;
+}
+
+.answer {
+    display: none;
+    margin-left: 1em;
+    color: #444;
+  }
+  
+  .question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+
+  

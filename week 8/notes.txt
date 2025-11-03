@@ -1,0 +1,52 @@
+1.  How have methods like map(), filter(), and reduce() changed the way developers approach data transformations in JavaScript? 
+
+These methods have been around for awhile.  They were a part of ES5 update in 2009.  Being able to 
+nondestructively perform operations on arrays while creating new arrays to hold the modified data
+must have greatly simplified data handling.
+
+Can you provide code example of each of these methods and the results of that code?
+
+map():
+    *** with map you perform an operation on each element in an array and return the result of that
+    operation into a new array.  The original array is not altered.
+
+    let batmanArr = ['Batman', 'Robin', 'Batgirl', 'Joker'];
+    console.log(batmanArr); // logs original array
+    let newBatmanArr = batmanArr.map((character) => `${character} is a character in the Batman comics`);
+    // adds string message to each character
+    console.log(newBatmanArr); // logs character mapped with new string
+    console.log(batmanArr);  // a test to see that the original array still has not been modified
+
+
+filter():
+    *** with filter you can take search through an array using certain conditions to 
+    return a new array that satisfies your conditions.  The original array is not modified.
+
+    let batmanArr = ['Batman', 'Robin', 'Batgirl', 'Joker'];
+    let newBatmanArr = batmanArr.filter((character) => character.length === 5);
+    console.log(batmanArr); // original array is output
+    console.log(newBatmanArr); // only Robin and Joker are output
+
+reduce():
+    *** reduce() always reduces an array to a single value.
+    *** reduce() takes 2 args.  The first arg is the callback function described below. 
+        The 2nd arg is where the function begins. It could be at 0 for sum functions, 
+        1 for multiplication functions or an empty string if are wanting to tack on strings.
+    *** reduce takes a callback function with 2 parameters.  The first arg will always be an
+    accumulator (acc).  The  second arg will always be the current element. (current).
+
+    *** let numbers = [1,2,3,4,5];  // array to be reduced
+    *** let newNumbers = numbers.reduce((acc, current) => acc + current, 10);  // acc starts at 10,
+    *** reduce goes through each element and adds to the acc and final value = 25
+    *** again, original array is not destroyed.
+console.log(newNumbers);
+   
+
+2. What are global JavaScript methods and how do they differ from object-specific methods?
+
+A:  Global methods are methods that are a built in part of the JS language and I don't think they
+HAVE to be attached to an object (although I have seen cases where they CAN be ( i think!).  Some
+examples of Global JS Methods are parseInt(), isNaN, Number.isFinite() (<---   see!?!.  It's attached
+to an object!!!).  The point is they don't have to be.  
+
+If you try and call an object-specific method without an object it will return undefined or a TypeError.

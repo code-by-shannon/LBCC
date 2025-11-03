@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*modules": "php",
+    "iostream": "cpp"
+  }
+}

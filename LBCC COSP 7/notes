@@ -1,0 +1,49 @@
+Display "Enter the number of hours that the car will travel"
+Input hours
+Set speed = 60
+Set distanceFormulaResult = speed * hours
+Set distance "= total distance traveled in" + hours + 'hours' + is distanceFormulaResult + 'miles'
+
+//ex 1
+"Enter the number of hours that the car will travel"
+5
+Display distance
+
+//ex2
+"Enter the number of hours that the car will travel"
+8
+Display distance
+
+//ex2
+"Enter the number of hours that the car will travel"
+12
+Display distance
+
+
+Programming Exercise 12
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float tempC;
+
+    cout << "Enter a temperature in Celsius."  << endl;
+    cin >> tempC;
+    float conversion = (9.0/5.0) * tempC + 32;
+    
+    cout << "here is your celsius value in fahrenheit: ";
+    cout << conversion;
+    return 0;
+
+}
+
+
+C++ Notes
+
+
+
+
+
+

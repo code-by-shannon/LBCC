@@ -1,0 +1,108 @@
+*****  Assign - 7
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numberToConvert;
+
+    cout << "Enter a number between 1 and 10." << endl;
+    cin >> numberToConvert;
+
+    if (numberToConvert < 1 || numberToConvert > 10) {
+        cout << "Not a valid number, enter a number between 1 and 10" << endl;
+        return 0; // stop here if invalid input
+    }
+
+    switch (numberToConvert) {
+        case 1:
+            cout << "I" << endl;
+            break;
+        case 2:
+            cout << "II" << endl;
+            break;
+        case 3:
+            cout << "III" << endl;
+            break;
+        case 4:
+            cout << "IV" << endl;
+            break;
+        case 5:
+            cout << "V" << endl;
+            break;
+        case 6:
+            cout << "VI" << endl;
+            break;
+        case 7:
+            cout << "VII" << endl;
+            break;
+        case 8:
+            cout << "VIII" << endl;
+            break;
+        case 9:
+            cout << "IX" << endl;
+            break;
+        case 10:
+            cout << "X" << endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+***** Assign -8
+
+// ***********************
+// *** book club points ***
+// ***********************
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int numberOfBooks;
+    cout << "How many books have you purchased this month?" << endl;
+    cin >> numberOfBooks;
+
+    if (numberOfBooks == 0) {
+        cout << "We're sorry, you haven't earned any points this month" << endl;
+    } else if (numberOfBooks == 1) {
+        cout << "You earned 5 points this month" << endl;
+    } else if (numberOfBooks == 2) {
+        cout << "You earned 15 points this month" << endl;
+    } else if (numberOfBooks == 3) {
+        cout << "You earned 30 points this month" << endl;
+    } else {
+        cout << "You earned 60 points this month" << endl;
+    }
+}
+
+
+***** assign - 9
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float packageWeight;
+    float shippingRate;
+    cout << "Please enter weight of package, enter numbers only!" << endl;
+    cin >> packageWeight;
+
+    if (packageWeight < 2) {
+        shippingRate = packageWeight * 1.1;
+        cout << "You're shipping charge is:" << shippingRate << endl;
+    } else if (packageWeight >= 2 && packageWeight <= 6) {
+        shippingRate = packageWeight * 2.2;
+        cout << "You're shipping charge is:" << shippingRate << endl;
+    } else if (packageWeight > 6 && packageWeight <= 10) {
+        shippingRate = packageWeight * 3.7;
+        cout << "You're shipping charge is:" << shippingRate << endl;
+    } else {
+        shippingRate = packageWeight * 3.8;
+        cout << "You're shipping charge is:" << shippingRate << endl;
+    }
+}

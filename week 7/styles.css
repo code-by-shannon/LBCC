@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    padding:2rem;
+}
+
+button{
+    margin:.5rem;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color:rgb(231, 124, 82);
+}
+
+li{
+    font-size: 2rem;
+}
+
+ul{
+    list-style-type: none;
+    padding-left:0;
+}

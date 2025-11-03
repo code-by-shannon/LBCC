@@ -17,9 +17,7 @@
                         Cart (<span class='js-cart-count'>0</span>)
                     </button>
                     <div class="cart">
-                        <ul class="cart__items">
-                           
-                        </ul>
+                        <ul class="cart__items"></ul>
                         <div class="cart__total"></div>
                             <div>sub-total: $<span class="js-cart-subtotal">0</span></div>
                             <div>tax: $<span class='js-cart-tax'>0</span></div>
@@ -36,6 +34,51 @@
             <ul class="products"></ul>
         </div>
     </main>
+
+    
+        
+        <div id="faq_div">
+            <h2>click to expand<span id="faq_span"> FAQ</span></h2>
+            
+            <div class="faq-item">
+              <p class="question">Q: How delicious are your fries really? Is it true Madonna loves them?</p>
+              <p class="answer">A: Our fries are scientifically proven...</p>
+            </div>
+          
+            <div class="faq-item">
+              <p class="question">Q: What hours are you open?</p>
+              <p class="answer">A: We're open from 11:00 a.m. until the fryer begs for mercy...</p>
+            </div>
+          
+            <div class="faq-item">
+              <p class="question">Q: Is it true your burgers are so good that the cows are happy to sacrifice themselves?</p>
+              <p class="answer">A: Absolutely. They leave us handwritten notes...</p>
+            </div>
+          </div>
+
+          <footer>
+            <h2>Contact Us</h2>
+          
+            <form action="#" method="post" id = 'form' novalidate>
+              <label for="firstName">First Name:</label><br>
+              <input type="text" id="firstName" name="firstName" required><br><br>
+          
+              <label for="lastName">Last Name:</label><br>
+              <input type="text" id="lastName" name="lastName" required><br><br>
+          
+              <label for="email">Email Address:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+          
+              <button type="submit">Submit</button>
+            </form>
+
+            <p id="error_message"></p>
+          </footer>
+          
+          
+      
+
+
     <script src="main.js"></script> 
 </body>
 </html>
