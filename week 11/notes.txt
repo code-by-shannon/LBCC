@@ -1,7 +1,0 @@
-1.  Explain the call stack. How can understanding the call stack aid in the debugging process?
-
-
-2.  What are the primary purposes of cookies in web development, and how have they evolved over time?
-
-
-3.  How does local storage differ from session storage, and when might one be preferable over the other?

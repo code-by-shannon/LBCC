@@ -1,0 +1,4 @@
+4.  create a regex with search.value.   
+    use this regex to check for a match
+
+    if a match is found . . . 
