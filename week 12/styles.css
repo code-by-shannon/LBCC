@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#city {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#getWeather {
+    padding: 8px 14px;
+    margin-left: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#five_day_div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#five_day_div > div {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+#five_day_div h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#five_day_div p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #444;
+}
+
